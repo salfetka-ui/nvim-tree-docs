@@ -210,3 +210,15 @@
 ((comment) @member.doc
  .
  (public_field_definition) @member.definition)
+
+
+; inherits: typescript
+
+; Member doc
+((comment) @member.doc
+
+(class_declaration 
+   name (m) @member.class
+   body: (class_body
+        (public_field_definition) @member.definition
+
